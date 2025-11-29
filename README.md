@@ -64,6 +64,7 @@ Results:
 
 Implemented three indexes:
 
+```md
 ```sql
 -- 1. Nonclustered Index
 CREATE NONCLUSTERED INDEX IX_SOH_SalesPersonID
@@ -78,7 +79,6 @@ INCLUDE (SalesOrderID, OrderDate, TotalDue, Freight);
 CREATE NONCLUSTERED INDEX IX_SOH_SalesPersonID_Filtered
 ON Sales.SalesOrderHeader (SalesPersonID)
 WHERE SalesPersonID IS NOT NULL;
-```sql
 
 
 ### ✔ Performance Comparison (Task 6)
