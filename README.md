@@ -87,14 +87,9 @@ SET STATISTICS IO ON;
 SET STATISTICS TIME ON;
 ```
 
- Results
-Version	Logical Reads	CPU Time	Elapsed Time
-Legacy Cursor	Very high (thousands)	~150–300 ms	~150–300 ms
-Modernized (No Index)	686	32 ms	42 ms
-Modernized + Index	21	0 ms	24 ms
 
- Summary of Improvements
-Modernization reduces I/O by 99%+
-Indexing improves performance by another 97%
-Final version is 8–10× faster than the cursor version
-Execution plans confirm SQL Server performs index seeks instead of table scans
+Summary of Improvements  
+Modernization reduces I/O by 99%+  
+Indexing improves performance by another 97%  
+Final version is 8–10× faster than the cursor version  
+Execution plans confirm SQL Server performs index seeks instead of table scans  
