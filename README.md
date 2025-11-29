@@ -78,7 +78,7 @@ INCLUDE (SalesOrderID, OrderDate, TotalDue, Freight);
 CREATE NONCLUSTERED INDEX IX_SOH_SalesPersonID_Filtered
 ON Sales.SalesOrderHeader (SalesPersonID)
 WHERE SalesPersonID IS NOT NULL;
-
+```sql
 
 
 ### ✔ Performance Comparison (Task 6)
