@@ -82,10 +82,10 @@ WHERE SalesPersonID IS NOT NULL;
 
 ### ✔ Performance Comparison (Task 6)
 Performance was measured using:
-```sql
+```
 SET STATISTICS IO ON;
 SET STATISTICS TIME ON;
-```sql
+```
 
  Results
 Version	Logical Reads	CPU Time	Elapsed Time
